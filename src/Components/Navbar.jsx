@@ -77,6 +77,18 @@ function Navbar() {
                                     ? "navbar-content navbar-active-content"
                                     : "navbar-content"
                             }
+                            to="/MyProjects">
+                            Projects
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            onClick={closeMenu}
+                            className={({ isActive }) =>
+                                isActive
+                                    ? "navbar-content navbar-active-content"
+                                    : "navbar-content"
+                            }
                             to="/AboutMe">
                             About
                         </NavLink>

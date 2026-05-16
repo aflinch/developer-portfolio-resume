@@ -240,7 +240,7 @@ h3 {
 /* Skills Section */
 .skills-section {
     display: flex;
-    padding: 85.333px 85.333px;
+    padding: 50px 85.333px 85.333px;
     flex-direction: column;
     justify-content: center;
     align-items: anchor-center;

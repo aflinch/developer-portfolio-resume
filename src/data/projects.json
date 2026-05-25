@@ -2,9 +2,19 @@
   "skills": [
     {
       "id": "1",
-      "src": "./skill1.png",
-      "title": "Java",
-      "description": "10 Years of Experience"
+      "src": "./Project1.png",
+      "title": "Course Management System",
+      "tech": ["Java", "UML"],
+      "description": "Engineered class hierarchies and reusable interfaces to model complex academic workflows."
+      "link": "none"
+    },
+    {
+      "id": "2",
+      "src": "./Project2.png",
+      "title": "Video Game Collection Database",
+      "tech": ["SQL", "ERD"],
+      "description": "Engineered a fully normalized database using ERD-based schema modeling and indexed foreign keys for speed.",
+      "link": "none"
     }
   ]
 }

@@ -15,6 +15,14 @@
       "tags": ["SQL", "ERD"],
       "description": "Engineered a fully normalized database using ERD-based schema modeling and indexed foreign keys for speed.",
       "link": "none"
+    },
+    {
+      "id": "3",
+      "src": "./Project2.png",
+      "title": "Video Game Collection Database",
+      "tags": ["SQL", "ERD"],
+      "description": "Engineered a fully normalized database using ERD-based schema modeling and indexed foreign keys for speed.",
+      "link": "none"
     }
   ]
 }

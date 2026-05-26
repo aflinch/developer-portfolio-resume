@@ -1,10 +1,21 @@
 import data from '../../data/index.json';
 import SkillsModel from '../../Components/SkillsModel';
-import {useEffect, useState} from "react";
+import {useState} from "react";
+import { FaJava, FaPython, FaReact, FaDatabase } from "react-icons/fa";
+import { SiPostgresql, SiJavascript } from "react-icons/si";
 
 export default function MySkills() {
     const [showModel, setShowModel] = useState(false);
     const [selectedSkill, setSelectedSkill] = useState(null);
+
+    const iconMap = {
+        Java: FaJava,
+        Python: FaPython,
+        Javascript: SiJavascript,
+        SQL: FaDatabase,
+        React: FaReact,
+        Postgres: SiPostgresql
+    };
 
     return (
         <section className="skills-section" id="mySkills">
@@ -13,20 +24,24 @@ export default function MySkills() {
                 <h2 className="skills-section-heading">My <span className="skills-section-sub-color">Skills</span></h2>
             </div>
             <div className="skills-section-container">
-                {data?.skills?.map((item, index) => (
-                    <div className="skills-section-card" key={index} onClick={() => {
-                        setSelectedSkill(item);
-                        setShowModel(true);
-                    }}>
-                        <div className="skills-section-img">
-                            <img src={item.src} alt="Skill Img" />
+                {data?.skills?.map((item, index) => {
+                    const IconComponent = iconMap[item.title];
+
+                    return (
+                        <div className="skills-section-card" key={index} onClick={() => {
+                            setSelectedSkill(item);
+                            setShowModel(true);
+                        }}>
+                            <div className="skills-section-img">
+                                {IconComponent ? <IconComponent /> : null}
+                            </div>
+                            <div className="skills-section-card-contnet">
+                                <h3 className="skills-section-card-title">{item.title}</h3>
+                                <p className="skills-section-card-description">{item.description}</p>
+                            </div>
                         </div>
-                        <div className="skills-section-card-contnet">
-                            <h3 className="skills-section-card-title">{item.title}</h3>
-                            <p className="skills-section-card-description">{item.description}</p>
-                        </div>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
             {showModel && <SkillsModel
                 skill={selectedSkill}
@@ -36,5 +51,5 @@ export default function MySkills() {
                 }}
             />}
         </section>
-    )
+    );
 }

@@ -282,11 +282,17 @@ h3 {
     line-height: 30px;
     text-align: center;
 }
+.about-section-content-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
 .about-section-info {
     display: flex;
     flex-direction: column;
     padding: 32px;
-    width: 52.333vw;
+    width: 100%;
     background: var(--bg-shade);
     border-radius: 20px;
     position: relative;
@@ -347,11 +353,24 @@ h3 {
     line-height: 26px;
     padding-bottom: 8px;
 }
+.about-experience-section {
+    display: flex;
+    color: var(--heading-color);
+    gap: 30px;
+    padding-top: 20px;
+    padding-left: 32px;
+}
+.about-education-title {
+    color: var(--primary);
+}
+.about-experience-title {
+    color: var(--primary);
+}
 
 /* Skills Section */
 .skills-section {
     display: flex;
-    padding: 50px 85.333px 85.333px;
+    padding: 35px 85.333px 85.333px;
     flex-direction: column;
     justify-content: center;
     align-items: center;

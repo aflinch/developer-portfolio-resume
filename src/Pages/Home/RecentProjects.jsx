@@ -12,7 +12,7 @@ export default function RecentProjects() {
                     that highlight my experience in full-stack development and software engineering.
                 </p>
             </div>
-            <div className="skills-section-container">
+            <div className="projects-section-container">
                 {personal?.projects
                     ?.toSorted((a, b) => b.id - a.id) // Sorts by ID, highest to lowest
                     ?.slice(0, 3)

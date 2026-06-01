@@ -24,8 +24,10 @@ export default function MySkills() {
         <section className="skills-section" id="mySkills">
             <div className="skills-section-content">
                 <div className="skills-contianer">
-                    <h2 className="skills-section-heading">Skills<span className="sub-color">.</span></h2>
-                    <hr className="title-divider" />
+                    <div className="section-heading-row">
+                        <h2 className="skills-section-heading">SKILLS<span className="sub-color">.</span></h2>
+                        <hr className="title-divider" />
+                    </div>
                     <h3 className="skills-section-title">Expertise</h3>
                 </div>
                 <div className="skills-section-container">

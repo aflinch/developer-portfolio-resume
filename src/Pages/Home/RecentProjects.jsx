@@ -8,8 +8,10 @@ export default function RecentProjects() {
         <section className="projects-section" id="recentProjects">
             <div className="projects-section-content">
                 <div className="projects-contianer">
-                    <h2 className="projects-section-heading">Projects<span className="sub-color">.</span></h2>
-                    <hr className="title-divider" />
+                    <div className="section-heading-row">
+                        <h2 className="projects-section-heading">PROJECTS<span className="sub-color">.</span></h2>
+                        <hr className="title-divider" />
+                    </div>
                     <h4 className="projects-section-description">
                         Here are some of my most recent projects
                         that highlight my experience in full-stack development and software engineering.

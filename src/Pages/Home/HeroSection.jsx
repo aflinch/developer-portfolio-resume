@@ -1,6 +1,9 @@
 import {NavLink} from "react-router-dom";
 import {useEffect, useState} from "react";
 import { Github, Linkedin } from 'lucide-react';
+import {TypewriterTitle} from "../../Components/TypeWriter";
+
+const titles = ["Full-Stack Developer", "Gameplay Designer", "Software-Test Engineer"];
 
 export default function HeroSection() {
     const [navActive, setNavActive] = useState(false);
@@ -37,13 +40,10 @@ export default function HeroSection() {
             <div className="hero-section-content-box">
                 <div className="hero-section-content">
                     <h3 className="hero-section-name">Hello, I'm Alex Flinchum</h3>
-                    <h1 className="hero-section-title">
-                        <span className="hero-section-title-color">Full-Stack </span>
-                        <span className="hero-section-title-sub-color">Developer</span>
-                    </h1>
+                    <TypewriterTitle texts={titles} />
                     <p className="hero-section-description">
-                        Crafting reliable enterprise applications with Java, React, and GraphQL.
-                        <br />Grounded in strong engineering principles, driven by automation.
+                        Designing interactive worlds, building scalable web apps, and breaking code to make it better.
+                        <br />Where creative logic meets rigorous technical execution.
                     </p>
                 </div>
                 <span className="hero-section-buttons">

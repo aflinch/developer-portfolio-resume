@@ -12,10 +12,9 @@ export default function RecentProjects() {
                         <h2 className="projects-section-heading">PROJECTS<span className="sub-color">.</span></h2>
                         <hr className="title-divider" />
                     </div>
-                    <h4 className="projects-section-description">
-                        Here are some of my most recent projects
-                        that highlight my experience in full-stack development and software engineering.
-                    </h4>
+                    <h3 className="projects-section-title">
+                        Featured full-stack and software engineering <span className="sub-color">work.</span>
+                    </h3>
                 </div>
                 <div className="projects-section-container">
                     {personal?.projects

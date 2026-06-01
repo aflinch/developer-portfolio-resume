@@ -54,7 +54,7 @@ export default function HeroSection() {
                         className="btn btn-primary">
                         Contact Me
                     </NavLink>
-                    <button className="btn btn-primary">Download CV</button>
+                    <a href="../../data/Flinchum, Alex - Resume.pdf" download="Flinchum, Alex - Resume.pdf" className="btn btn-primary">Download CV</a>
                 </span>
                 <span className="hero-section-links">
                     <a href="https://www.linkedin.com/in/alexflinchum/" className="link" target="_blank" rel="noopener noreferrer">
@@ -69,7 +69,7 @@ export default function HeroSection() {
                 </span>
             </div>
             <div className="hero-section-img">
-                <img src="./img/hero_img.png" alt="Hero Section Img"/>
+                <img src="../../data/img/hero-section-img.png" alt="Hero Section Img"/>
             </div>
         </section>
     )

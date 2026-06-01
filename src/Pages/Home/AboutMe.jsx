@@ -5,7 +5,7 @@ export default function AboutMe() {
         <section id="aboutMe" className="about-section">
             <div className="about-section-content">
                 <div className="about-container">
-                    <h2 className="about-section-heading">About <span className="about-section-sub-color">Me</span></h2>
+                    <h2 className="about-section-heading">About<span className="about-section-sub-color">.</span></h2>
                     <h3 className="about-section-title">A Passionate Developer</h3>
                 </div>
                 <div className="about-section-container">

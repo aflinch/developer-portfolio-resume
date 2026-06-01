@@ -13,7 +13,7 @@ export default function AboutMe() {
                 </div>
                 <div className="about-section-container">
                     <div className="about-section-img">
-                        <img src="" alt="About Me Img"/>
+                        <img src={aboutSectionImg} alt="About Me Img"/>
                     </div>
                     <div className="about-section-content-column">
                         <div className="about-section-info">

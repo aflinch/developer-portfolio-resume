@@ -1,9 +1,10 @@
 import React from 'react';
+import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
 
 function SkillsModel({ skill, onClose }) {
 
-    return (
+    return createPortal(
        <div className="modal-overlay" onClick={onClose}>
            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                <button className="modal-close" onClick={onClose}><X /></button>
@@ -12,7 +13,8 @@ function SkillsModel({ skill, onClose }) {
                    <p>{skill.description}</p>
                </div>
            </div>
-       </div>
+       </div>,
+       document.body
     )
 }
 

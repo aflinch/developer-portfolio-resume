@@ -1,4 +1,4 @@
-import personal from '../../data/personal.json';
+import personal from '../../data/personal.js';
 import { Github } from 'lucide-react';
 import React from "react";
 
@@ -20,8 +20,8 @@ export default function RecentProjects() {
                     {personal?.projects
                         ?.toSorted((a, b) => b.id - a.id) // Sorts by ID, highest to lowest
                         ?.slice(0, 3)
-                        .map((item, index) => (
-                        <div className="projects-section-card" key={index} >
+                        .map((item) => (
+                        <div className="projects-section-card" key={item.id} >
                             <div className="projects-section-img">
                                 <img src={item.src} alt="Project Img" />
                             </div>

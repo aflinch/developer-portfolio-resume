@@ -28,6 +28,7 @@ import { TbBrandCSharp } from "react-icons/tb";
 export default function SkillsSection() {
     const [showModel, setShowModel] = useState(false);
     const [selectedSkill, setSelectedSkill] = useState(null);
+    const [activeCategory, setActiveCategory] = useState("tll");
 
     const iconMap = {
         // Backend
@@ -58,6 +59,11 @@ export default function SkillsSection() {
         "Unity": FaUnity
     };
 
+    const categories = ["all", "frontend", "backend", "framework", "tool"];
+
+    const filteredSkills = data?.skills?.filter(
+        skill => activeCategory === "all" || skill.category === activeCategory);
+
     return (
         <section className="skills-section" id="mySkills">
             <div className="skills-section-content">
@@ -68,8 +74,20 @@ export default function SkillsSection() {
                     </div>
                     <h3 className="skills-section-title"><span className="sub-color">Expertise</span> in Action</h3>
                 </div>
+                <div className="skills-section-filter">
+                    {categories.map((category, index) => (
+                        <button className={activeCategory === category ? "skills-button skills-active-button" : "skills-button"}
+                                key={index}
+                                onClick={() => setActiveCategory(category)}>
+                            {category}
+                        </button>
+                    ))}
+                </div>
                 <div className="skills-section-container">
-                    {data?.skills?.map((item, index) => {
+                    {filteredSkills
+                        ? [...filteredSkills]
+                            .sort((a, b) => b.level - a.level)
+                            .map((item, index) => {
                         const IconComponent = iconMap[item.title];
 
                         return (
@@ -79,11 +97,15 @@ export default function SkillsSection() {
                             }}>
                                 <div className="skills-section-card-content">
                                     <h3 className="skills-section-card-title">{IconComponent ? <IconComponent /> : null} {item.title}</h3>
-                                    <p className="skills-section-card-description">{item.description}</p>
+                                </div>
+                                <div className="skills-section-card-progress-bar">
+                                    <div className="skills-section-card-progress" style={{ width: `${item.level}%` }}></div>
                                 </div>
                             </div>
                         );
-                    })}
+                    })
+                    : null
+                    }
                 </div>
                 {showModel && <SkillsModel
                     skill={selectedSkill}

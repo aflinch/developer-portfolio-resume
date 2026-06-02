@@ -75,8 +75,7 @@ h1,h2,h3,h4,h5,h6,p {
 .btn:hover {
     background-color: var(--primary);
     color: var(--off-white);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.45);
+    transform: translateY(-3px);
 }
 .link {
     width: 36px;
@@ -372,15 +371,13 @@ h3 {
     flex-direction: column;
     padding: 21.333px;
     width: 100%;
-    background: var(--bg-shade);
     border-radius: 20px;
     z-index: 2;
 }
 .about-block-title {
     color: var(--heading-color);
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 26px;
+    font-size: 23px;
+    line-height: 25px;
     padding-bottom: 10px;
     text-decoration: underline;
 }
@@ -390,8 +387,7 @@ h3 {
 .about-section-description {
     color: var(--darkblue);
     font-size: 17px;
-    font-weight: 400;
-    line-height: 26px;
+    line-height: 23px;
     padding-bottom: 10px;
     position: relative;
 }

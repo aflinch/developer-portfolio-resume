@@ -1,5 +1,6 @@
 import React from "react";
 import {Github, Linkedin, Mail, Phone} from "lucide-react";
+import {ContactForm} from "../../Components/ContactForm";
 
 export default function ContactSection() {
 
@@ -12,6 +13,10 @@ export default function ContactSection() {
                         <hr className="title-divider" />
                     </div>
                     <h3 className="contact-section-title">Get in <span className="sub-color">Touch</span></h3>
+                </div>
+
+                <div className="contact-form">
+                    <ContactForm />
                 </div>
 
                 <div className="contact-info-section">

@@ -48,7 +48,7 @@ function SkillsModal({ isOpen, skill, iconComponent, onClose }) {
                         {personal?.projects
                             ?.filter((item) => item.tags?.includes(activeSkill.title))
                             ?.sort((a, b) => b.id - a.id)
-                            ?.slice(0, 4)
+                            ?.slice(0, 2)
                             .map((item, index) => (
                                 <NavLink
                                     key={item.id || index}

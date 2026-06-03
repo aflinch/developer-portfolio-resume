@@ -19,7 +19,7 @@ export default function RecentProjectsSection() {
                 <div className="projects-section-container">
                     {personal?.projects
                         ?.sort((a, b) => b.id - a.id)
-                        ?.slice(0, 3)
+                        ?.slice(0, 4)
                         .map((item) => (
                             <ProjectCard item={item} />
                     ))}

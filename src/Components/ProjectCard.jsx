@@ -2,9 +2,9 @@ import React from 'react';
 import { Github } from "lucide-react";
 
 // Added showTags and showLink as optional props with default values of true
-function ProjectCard({ item, showTags = true, showDescription= true, showLink = true, className}) {
+function ProjectCard({ item, showTags = true, showDescription= true, showLink = true}) {
     return (
-        <div className={`projects-section-card ${className || ''}`}>
+        <div className="projects-section-card">
             <div className="projects-section-img">
                 <img src={item.src} alt="Project Img" />
             </div>

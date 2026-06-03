@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import {X} from 'lucide-react';
 import personal from "../data/personal";
 import ProjectCard from "./ProjectCard";
+import {NavLink} from "react-router-dom";
 
 function SkillsModal({ skill, iconComponent, onClose }) {
     const IconComponent = iconComponent;
@@ -25,7 +26,11 @@ function SkillsModal({ skill, iconComponent, onClose }) {
                            ?.sort((a, b) => b.id - a.id)
                            ?.slice(0, 4)
                            .map((item) => (
-                               <ProjectCard item={item} showTags={false} showDescription={false} showLink={false} className="modal-project-card"/>
+                               <NavLink
+                                   className="modal-project-card"
+                                   to="/MyProjects">
+                                   <ProjectCard item={item} showTags={false} showDescription={false} showLink={false}/>
+                               </NavLink>
                            ))}
                    </div>
                </div>

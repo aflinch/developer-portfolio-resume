@@ -81,34 +81,35 @@ export default function SkillsSection() {
                         ? [...filteredSkills]
                             .sort((a, b) => b.level - a.level)
                             .map((item, index) => {
-                        const IconComponent = iconMap[item.title];
+                                const IconComponent = iconMap[item.title];
 
-                        return (
-                            <div className="skills-section-card" key={index} onClick={() => {
-                                setSelectedSkill(item);
-                                setShowModel(true);
-                            }}>
-                                <div className="skills-section-card-title">
-                                    <h3>{IconComponent ? <IconComponent /> : null} {item.title}</h3>
-                                </div>
-                                <div className="skills-progress-bar">
-                                    <div className="skills-progress" style={{ width: `${item.level}%` }}></div>
-                                </div>
-                                <p>{item.level}%</p>
-                            </div>
-                        );
-                    })
-                    : null
+                                return (
+                                    <div className="skills-section-card" key={index} onClick={() => {
+                                        setSelectedSkill(item);
+                                        setShowModel(true);
+                                    }}>
+                                        <div className="skills-section-card-title">
+                                            <h3>{IconComponent ? <IconComponent /> : null} {item.title}</h3>
+                                        </div>
+                                        <div className="skills-progress-bar">
+                                            <div className="skills-progress" style={{ width: `${item.level}%` }}></div>
+                                        </div>
+                                        <p>{item.level}%</p>
+                                    </div>
+                                );
+                            })
+                        : null
                     }
                 </div>
-                {showModel && <SkillsModal
+                <SkillsModal
+                    isOpen={showModel}
                     skill={selectedSkill}
-                    iconComponent={iconMap[selectedSkill.title]}
+                    iconComponent={selectedSkill?.title ? iconMap[selectedSkill.title] : null}
                     onClose={() => {
                         setShowModel(false);
-                        setSelectedSkill(null);
+                        setTimeout(() => setSelectedSkill(null), 400);
                     }}
-                />}
+                />
             </div>
         </section>
     );

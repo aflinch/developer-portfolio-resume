@@ -4,145 +4,169 @@
       "id": "1",
       "title": "Java",
       "level": 95,
-      "category": "backend"
+      "category": "backend",
+      "description": "I've used Java to scale enterprise data platforms, build robust backend systems, and design modular course enrollment applications."
     },
     {
       "id": "2",
       "title": "C#",
       "level": 88,
-      "category": "backend"
+      "category": "backend",
+      "description": "I've built custom, end-to-end test automation frameworks and backend integration workflows from scratch."
     },
     {
       "id": "3",
       "title": "GraphQL",
       "level": 85,
-      "category": "backend"
+      "category": "backend",
+      "description": "I've designed enterprise metadata queries and developed reusable service integration patterns across multiple business units."
     },
     {
       "id": "4",
       "title": "SQL",
       "level": 90,
-      "category": "backend"
+      "category": "backend",
+      "description": "I've modeled normalized relational databases, written stored procedures, and managed multi-location authentication systems."
     },
     {
       "id": "5",
       "title": "PostgreSQL",
       "level": 85,
-      "category": "backend"
+      "category": "backend",
+      "description": "I've managed production asset metadata and maintained complex node relationships for backend data services."
     },
     {
       "id": "6",
       "title": "Python",
       "level": 90,
-      "category": "backend"
+      "category": "backend",
+      "description": "I've developed object-oriented structures, algorithmic analysis scripts, and data manipulation tools during my graduate studies."
     },
     {
       "id": "8",
       "title": "C++",
       "level": 70,
-      "category": "backend"
+      "category": "backend",
+      "description": "I've mastered fundamental data structures, core algorithms, and low-level logic through my computer science coursework."
     },
     {
       "id": "9",
       "title": "PHP",
       "level": 78,
-      "category": "backend"
+      "category": "backend",
+      "description": "I've engineered dynamic web applications, built secure multi-tenant portals, and integrated mapping tools."
     },
     {
       "id": "10",
       "title": "GO",
       "level": 60,
-      "category": "backend"
+      "category": "backend",
+      "description": "I've been using Go alongside MongoDB to construct a high-performance, type-safe GraphQL backend service."
     },
     {
       "id": "20",
       "title": "MongoDB",
       "level": 50,
-      "category": "backend"
+      "category": "backend",
+      "description": "I've integrated MongoDB with Go as the core document database layer to efficiently manage and query GraphQL schemas."
     },
     {
       "id": "11",
       "title": "SpringBoot",
       "level": 90,
-      "category": "framework"
+      "category": "framework",
+      "description": "I've integrated automated regression testing into core data-as-a-service systems to dramatically scale test coverage."
     },
     {
       "id": "12",
       "title": ".NET",
       "level": 85,
-      "category": "framework"
+      "category": "framework",
+      "description": "I've built and maintained backend systems to manage extensive equipment metadata frameworks across production facilities."
     },
     {
       "id": "13",
       "title": "Laravel",
       "level": 70,
-      "category": "framework"
+      "category": "framework",
+      "description": "I've led an internship development team to design, build, and deliver a web application for community use."
     },
     {
       "id": "14",
       "title": "Angular",
       "level": 80,
-      "category": "framework"
+      "category": "framework",
+      "description": "I've owned and modernized a core file-processing analytics platform, upgrading 100% of its legacy components."
     },
     {
       "id": "15",
       "title": "React",
       "level": 85,
-      "category": "frontend"
+      "category": "frontend",
+      "description": "I've created intuitive frontend interfaces that helped hundreds of active users manage asset relationships smoothly."
     },
     {
       "id": "16",
       "title": "JavaScript",
       "level": 88,
-      "category": "frontend"
+      "category": "frontend",
+      "description": "I've implemented interactive features and optimized complex event handling mechanics across various web projects."
     },
     {
       "id": "17",
       "title": "HTML",
       "level": 90,
-      "category": "frontend"
+      "category": "frontend",
+      "description": "I've structured semantic, accessible layouts for enterprise software, interactive layouts, and non-profit websites."
     },
     {
       "id": "18",
       "title": "CSS",
       "level": 88,
-      "category": "frontend"
+      "category": "frontend",
+      "description": "I've designed responsive, cross-browser user interfaces and integrated custom layout styling plugins."
     },
     {
       "id": "19",
       "title": "TypeScript",
       "level": 85,
-      "category": "frontend"
+      "category": "frontend",
+      "description": "I've built robust, type-safe web components to improve frontend reliability and reduce regression bugs."
     },
     {
       "id": "21",
       "title": "Azure",
       "level": 65,
-      "category": "tool"
+      "category": "tool",
+      "description": "I've utilized Azure to host full-stack projects, configure cloud architecture pipelines, and deploy live web applications."
     },
     {
       "id": "22",
       "title": "Git",
       "level": 90,
-      "category": "tool"
+      "category": "tool",
+      "description": "I've managed version control pipelines, branch strategies, and coordinated code releases across engineering teams."
     },
     {
       "id": "23",
       "title": "Unity",
       "level": 75,
-      "category": "tool"
+      "category": "tool",
+      "description": "I've scripted game mechanics, managed asset pipelines, and designed interactive virtual scenes during my studies."
     },
     {
       "id": "24",
       "title": "Jira",
       "level": 85,
-      "category": "tool"
+      "category": "tool",
+      "description": "I've tracked software defects, managed sprint milestones, and streamlined rapid deployment cycles."
     },
     {
       "id": "25",
       "title": "Unreal Engine",
       "level": 65,
-      "category": "tool"
+      "category": "tool",
+      "description": "I've scripted gameplay mechanics, managed 3D asset pipelines, and designed interactive virtual environments during my studies."
     }
   ]
 }

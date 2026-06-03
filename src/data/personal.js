@@ -1,8 +1,32 @@
-import project1Img from "./img/project-1.png";
-import project2Img from "./img/project-2.png";
+import project1Img from "./img/projects/project-1.png";
+import project2Img from "./img/projects/project-2.png";
 
 const personal = {
   "projects": [
+    {
+      "id": "0",
+      "src": project2Img,
+      "title": "Video Game Collection Database",
+      "tags": ["SQL", "ERD"],
+      "description": "Engineered a fully normalized database using ERD-based schema modeling and indexed foreign keys for speed.",
+      "url": "https://github.com"
+    },
+    {
+      "id": "0",
+      "src": project2Img,
+      "title": "Video Game Collection Database",
+      "tags": ["SQL", "ERD"],
+      "description": "Engineered a fully normalized database using ERD-based schema modeling and indexed foreign keys for speed.",
+      "url": "https://github.com"
+    },
+    {
+      "id": "0",
+      "src": project2Img,
+      "title": "Video Game Collection Database",
+      "tags": ["SQL", "ERD"],
+      "description": "Engineered a fully normalized database using ERD-based schema modeling and indexed foreign keys for speed.",
+      "url": "https://github.com"
+    },
     {
       "id": "1",
       "src": project1Img,

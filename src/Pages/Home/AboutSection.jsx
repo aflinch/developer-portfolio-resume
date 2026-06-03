@@ -19,15 +19,15 @@ export default function AboutSection() {
                 <div className="about-section-content-column">
                     <div className="about-experience-section">
                         <div className="stat-box">
-                            <h2 className="about-experience">6+</h2>
+                            <h2>6+</h2>
                             <p>Years of Education</p>
                         </div>
                         <div className="stat-box">
-                            <h2 className="about-experience">6+</h2>
+                            <h2>6+</h2>
                             <p>Years of Experience</p>
                         </div>
                         <div className="stat-box">
-                            <h2 className="about-experience">{totalSkillsCount}+</h2>
+                            <h2>{totalSkillsCount}+</h2>
                             <p>Technical Skills</p>
                         </div>
                     </div>

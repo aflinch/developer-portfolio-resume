@@ -48,6 +48,11 @@ h1,h2,h3,h4,h5,h6,p {
 .sub-color {
     color: var(--primary);
 }
+.about-section, .skills-section {
+    position: relative;
+    background-color: var(--off-white);
+    z-index: 0;
+}
 .project-card-link, .btn {
     display: inline-flex;
     justify-content: center;
@@ -293,9 +298,6 @@ h3 {
     align-self: stretch;
     white-space: nowrap;
 }
-.hero-section-title-sub-color {
-    color: var(--primary);
-}
 .hero-section-description {
     color: var(--darkblue);
     font-size: 18px;
@@ -344,11 +346,6 @@ h3 {
 }
 
 /* About Me Section */
-.about-section {
-    position: relative;
-    background-color: var(--off-white);
-    z-index: 0;
-}
 .about-section-content {
     display: flex;
     padding: 15px 12vh 0;
@@ -361,9 +358,6 @@ h3 {
     font-weight: 700;
     line-height: 70px;
     text-align: start;
-}
-.about-section-sub-color {
-    color: var(--primary);
 }
 .about-section-title {
     color: var(--heading-color);
@@ -453,12 +447,12 @@ h3 {
     height: 100%;
     background-color: #2d3748;
 }
-.about-experience {
+.stat-box h2 {
     color: var(--primary);
     position: relative;
     overflow: hidden;
 }
-.about-experience::before {
+.stat-box h2::before {
     content: "";
     position: absolute;
     top: 0;
@@ -491,11 +485,6 @@ h3 {
 }
 
 /* Skills Section */
-.skills-section {
-    position: relative;
-    background-color: var(--off-white);
-    z-index: 0;
-}
 .skills-section-content {
     display: flex;
     padding: 10px 12vh 25.333px;
@@ -515,9 +504,6 @@ h3 {
     font-weight: 400;
     line-height: 30px;
     text-align: right;
-}
-.skills-section-sub-color {
-    color: var(--primary);
 }
 .skills-section-container {
     display: grid;
@@ -634,9 +620,6 @@ h3 {
     font-size: 26.667px;
     font-weight: 400;
     line-height: 30px;
-}
-.projects-section-sub-color {
-    color: var(--primary);
 }
 .projects-section-container {
     display: grid;
@@ -789,9 +772,9 @@ h3 {
 }
 .modal-content {
     background-color: var(--bg-shade);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 32px;
-    max-width: 850px;
+    max-width: 800px;
     width: 90%;
     max-height: 80vh;
     overflow-y: auto;
@@ -819,3 +802,37 @@ h3 {
 .modal-body {
     margin-top: 10px;
 }
+.modal-header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+.modal-header-section h3 {
+    color: var(--heading-color);
+    font-size: 44.667px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: right;
+}
+.modal-projects-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 12.6px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    width: 100%;
+}
+.modal-projects {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+}
+.modal-projects img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+

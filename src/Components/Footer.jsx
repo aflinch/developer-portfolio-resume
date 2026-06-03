@@ -18,7 +18,7 @@ function Footer() {
                         <Phone /> (317) 650-5565
                     </span>
                     <span className="footer-contact-info">
-                        <Mail /> alexflinchum@gmail.com
+                        <Mail /> alexanderflinchum@gmail.com
                     </span>
                 </div>
             </div>

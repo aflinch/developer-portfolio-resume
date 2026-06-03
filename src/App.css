@@ -677,6 +677,23 @@ h3 {
     color: var(--card);
     transform: scale(1.025);
 }
+/* Container for the modal projects */
+.projects-skill-modal {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+.modal-project-card .projects-section-card {
+    width: 100% !important;
+    gap: 2px;
+}
+.modal-project-card .projects-section-img {
+    height: 220px;
+}
+
+
 
 /* Footer */
 .footer-section {
@@ -796,7 +813,7 @@ h3 {
     color: var(--darkblue);
     font-size: 17px;
     line-height: 23px;
-    padding: 10px 0;
+    padding-top: 10px;
     position: relative;
 }
 .modal-header-section {

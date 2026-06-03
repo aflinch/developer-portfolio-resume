@@ -37,9 +37,8 @@ export default function AboutSection() {
                             <h3>BIO</h3>
                             <p>
                                 I'm a software engineer who enjoys building applications that are both reliable behind the
-                                scenes and intuitive for the people who use them. Over the past six years at General Motors,
-                                I've had the opportunity to work across the full stack, from modern web interfaces to backend
-                                services and enterprise data platforms.
+                                scenes and intuitive for the people who use them. Since my six years at General Motors, I
+                                have worked across the full stack, from modern web interfaces to backend services and enterprise data platforms.
                             </p>
                             <p>
                                 What I enjoy most about software development is solving complex problems, improving systems,

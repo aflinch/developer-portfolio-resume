@@ -56,18 +56,21 @@ h1,h2,h3,h4,h5,h6,p {
     background-color: var(--off-white);
     z-index: 0;
 }
-.about-section-heading, .skills-section-heading, .projects-section-heading {
+.about-section-heading, .skills-section-heading, .projects-section-heading, .contact-section-heading {
     color: var(--heading-color);
     font-size: 64px;
     font-weight: 700;
     line-height: 70px;
 }
-.about-section-title, .skills-section-title, .projects-section-title {
+.about-section-title, .skills-section-title, .projects-section-title, .contact-section-title {
     color: var(--heading-color);
     font-weight: 400;
     line-height: 30px;
 }
-.project-card-link, .btn {
+.about-section-title, .skills-section-title, .contact-section-title {
+    font-size: 44.667px;
+}
+.project-card-link, .contact-form input[type="submit"], .btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -109,25 +112,30 @@ h1,h2,h3,h4,h5,h6,p {
     transform: translateY(-3px);
 }
 .link {
-    width: 36px;
-    height: 36px;
+    width: 41px;
+    height: 41px;
     border-radius: 50%;
-    border: 2.379px solid var(--heading-color);
+    border: none;
+    background: #d4dae2;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-}
-.link img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-    filter: brightness(0) saturate(100%);
+    transition: background 0.2s ease;
 }
 .link svg {
-    width: 20px;
-    height: 20px;
-    color: var(--heading-color);
+    width: 23px;
+    height: 23px;
+    color: var(--white);
+}
+.link img {
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Converts any color image to crisp white */
+}
+.link:hover {
+    background: var(--primary-shadow);
 }
 
 /* Main Headings */
@@ -337,7 +345,7 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 85.333px;
+    gap: 40.333px;
     margin-top: 33px;
 }
 .hero-section-img {
@@ -365,9 +373,6 @@ h3 {
     padding: 15px 12vh 0;
     flex-direction: column;
     gap: 32px;
-}
-.about-section-title {
-    font-size: 44.667px;
 }
 .about-section-content-column {
     display: flex;
@@ -490,7 +495,6 @@ h3 {
     text-align: right;
 }
 .skills-section-title {
-    font-size: 44.667px;
     text-align: right;
 }
 .skills-section-container {
@@ -677,7 +681,6 @@ h3 {
     color: var(--card);
     transform: scale(1.025);
 }
-/* Container for the modal projects */
 .projects-skill-modal {
     display: flex;
     gap: 16px;
@@ -692,8 +695,6 @@ h3 {
 .modal-project-card .projects-section-img {
     height: 220px;
 }
-
-
 
 /* Footer */
 .footer-section {
@@ -739,6 +740,11 @@ h3 {
     width: 20px;
     height: 20px;
 }
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
 .divider {
     margin: 26px 0 12px;
     height: 1.333px;
@@ -748,6 +754,157 @@ h3 {
 .footer-section-copyright {
     color: var(--heading-color);
 }
+
+/* Contact */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--off-white);
+    padding-bottom: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.contact-section::after {
+    content: "";
+    position: absolute;
+    top: 130%;
+    right: -85%;
+    transform: translateY(-50%) rotate(175deg);
+    width: 200%;
+    height: 215%;
+    border-radius: 500%;
+    background: var(--primary-shadow);
+    pointer-events: none;
+}
+.contact-section-content {
+    display: flex;
+    padding: 105px 12vh 0;
+    flex-direction: column;
+    gap: 32px;
+}
+.contact-container {
+    margin-bottom: 10px;
+}
+.contact-section-content-column {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    min-height: 550px;
+    z-index: 2;
+}
+.contact-info-section {
+    flex: 1.1;
+    border-radius: 5px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg-shade);
+    box-shadow: 5px 0 0 0 #d4dae2;
+}
+.contact-info-section h3 {
+    color: var(--darkblue);
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    text-decoration: underline;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--darkblue);
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.contact-info svg {
+    color: var(--darkblue);
+    width: 18px;
+    height: 18px;
+}
+.contact-info-section .hero-section-links {
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
+    z-index: 1;
+}
+.contact-form {
+    flex: 2.4;
+    padding: 50px 45px 40px 45px;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 35px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 35px;
+}
+.form-row-name .form-group {
+    margin-bottom: 0;
+}
+.contact-form label {
+    color: var(--card-tag);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="phone"],
+.contact-form textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--off-card);
+    padding: 6px 0;
+    color: var(--heading-color);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom-color: var(--primary);
+}
+.contact-form textarea {
+    font-family: "Arial", Helvetica, sans-serif;
+    min-height: 85px;
+    resize: none;
+}
+.form-submit-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    padding-top: 30px;
+    width: 100%;
+}
+.contact-form input[type="submit"] {
+    background-color: var(--white);
+    color: var(--primary);
+    border-color: var(--primary);
+    width: auto;
+    align-self: flex-end;
+}
+.contact-form input[type="submit"]:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transform: scale(1.025);
+}
+
 
 /* Modal */
 .modal-overlay {

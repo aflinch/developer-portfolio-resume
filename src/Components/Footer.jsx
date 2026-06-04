@@ -1,5 +1,6 @@
 import React from 'react';
-import {Phone, Mail} from 'lucide-react';
+import { Phone, Mail, Linkedin } from 'lucide-react';
+import { SiInstagram } from "react-icons/si";
 import logo from "../data/img/logo.png";
 
 function Footer() {
@@ -20,6 +21,14 @@ function Footer() {
                     <span className="footer-contact-info">
                         <Mail /> alexanderflinchum@gmail.com
                     </span>
+                    <div className="footer-social">
+                        <a href="https://www.linkedin.com/in/alexflinchum/" className="footer-contact-info" target="_blank" rel="noopener noreferrer">
+                            <Linkedin />
+                        </a>
+                        <a href=" " className="footer-contact-info" target="_blank" rel="noopener noreferrer">
+                            <SiInstagram />
+                        </a>
+                    </div>
                 </div>
             </div>
 

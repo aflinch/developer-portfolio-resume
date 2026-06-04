@@ -786,7 +786,7 @@ h3 {
     display: flex;
     background-color: var(--white);
     border-radius: 5px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.35);
     min-height: 550px;
     z-index: 2;
 }

@@ -6,8 +6,8 @@ export default function ContactSection() {
 
     return (
         <section id="projectSection" className="all-projects-section">
-            <div className="projects-section-content">
-                <div className="projects-contianer">
+            <div className="all-projects-section-content">
+                <div className="all-projects-container">
                     <div className="section-heading-row">
                         <h2 className="all-projects-section-heading">PROJECTS<span className="sub-color">.</span></h2>
                         <hr className="title-divider" />

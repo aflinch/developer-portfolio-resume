@@ -52,7 +52,7 @@ export default function AboutSection() {
                             </p>
                             <NavLink
                                 className="about-info-link"
-                                to="/MyResume">
+                                to="/Experience">
                                 LEARN MORE
                             </NavLink>
                         </div>

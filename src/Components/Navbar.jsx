@@ -60,7 +60,7 @@ function Navbar() {
                                     ? "navbar-content navbar-active-content"
                                     : "navbar-content"
                             }
-                            to="/MyResume">
+                            to="/Experience">
                             Experience
                         </NavLink>
                     </li>

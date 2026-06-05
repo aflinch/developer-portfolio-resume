@@ -1,10 +1,10 @@
-import ExpereinceSection from '../ExperienceSection';
+import ExperienceSection from '../ExperienceSection';
 import Footer from '../../../Components/Footer';
 
 export default function Contact () {
     return (
         <>
-            <ExpereienceSection />
+            <ExperienceSection />
             <Footer />
         </>
     )

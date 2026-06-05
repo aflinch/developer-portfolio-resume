@@ -1,5 +1,7 @@
 import React from "react";
-import {Github, Linkedin, Mail, Phone} from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa6";
+import { SiGithub, SiInstagram } from "react-icons/si";
 import {ContactForm} from "../../Components/ContactForm";
 
 export default function ContactSection() {
@@ -15,27 +17,35 @@ export default function ContactSection() {
                     <h3 className="contact-section-title">Get in <span className="sub-color">Touch</span></h3>
                 </div>
 
-                <div className="contact-info-section">
-                    <h4>Contact Information</h4>
-                    <span className="contact-info">
-                        <Phone /> (317) 650-5565
-                    </span>
-                    <span className="contact-info">
-                        <Mail /> alexanderflinchum@gmail.com
-                    </span>
+                <div className="contact-section-content-column">
+                    <div className="contact-info-section">
+                        <h3>Contact Information</h3>
+                        <span className="contact-info">
+                            <Phone /> (317) 650-5565
+                        </span>
+                        <span className="contact-info">
+                            <Mail /> alexanderflinchum@gmail.com
+                        </span>
+                        <span className="contact-info">
+                            <MapPin /> Austin, TX (CST)
+                        </span>
 
-                    <span className="hero-section-links">
-                    <a href="https://www.linkedin.com/in/alexflinchum/" className="link" target="_blank" rel="noopener noreferrer">
-                        <Linkedin />
-                    </a>
-                    <a href="https://github.com/aflinch" className="link" target="_blank" rel="noopener noreferrer">
-                        <Github />
-                    </a>
-                    </span>
-                </div>
+                        <span className="hero-section-links">
+                            <a href="https://www.linkedin.com/in/alexflinchum/" className="link" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin />
+                            </a>
+                            <a href=" " className="link" target="_blank" rel="noopener noreferrer">
+                                <SiInstagram />
+                            </a>
+                            <a href="https://github.com/aflinch" className="link" target="_blank" rel="noopener noreferrer">
+                                <SiGithub />
+                            </a>
+                        </span>
+                    </div>
 
-                <div className="contact-form">
-                    <ContactForm />
+                    <div className="contact-form">
+                        <ContactForm />
+                    </div>
                 </div>
             </div>
         </section>

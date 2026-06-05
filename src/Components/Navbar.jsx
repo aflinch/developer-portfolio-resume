@@ -72,7 +72,7 @@ function Navbar() {
                                     ? "navbar-content navbar-active-content"
                                     : "navbar-content"
                             }
-                            to="/MyProjects">
+                            to="/Projects">
                             Projects
                         </NavLink>
                     </li>

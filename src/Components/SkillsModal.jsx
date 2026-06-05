@@ -53,7 +53,7 @@ function SkillsModal({ isOpen, skill, iconComponent, onClose }) {
                                 <NavLink
                                     key={item.id || index}
                                     className="modal-project-card"
-                                    to="/MyProjects">
+                                    to="/Projects">
                                     <ProjectCard item={item} showTags={false} showDescription={false} showLink={false}/>
                                 </NavLink>
                             ))}

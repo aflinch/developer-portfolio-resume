@@ -75,7 +75,7 @@ export default function AboutSection() {
                             </p>
                             <NavLink
                                 className="about-info-link"
-                                to="/MyProjects">
+                                to="/Projects">
                                 BROWSE PROJECTS
                             </NavLink>
                         </div>

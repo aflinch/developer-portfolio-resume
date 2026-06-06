@@ -1155,3 +1155,98 @@ h3 {
 .timeline-card ul li::marker {
     color: var(--progress-bar);
 }
+
+/* Media Sizes */
+@media (max-width: 1485px) {
+    .hero-section-title {
+        font-size: 52.667px;
+        white-space: normal;
+    }
+    .hero-section-description {
+        font-size: 17px;
+    }
+    .about-info-block p {
+        font-size: 16px;
+    }
+    .experience-section-card-tag {
+        font-size: 13px;
+    }
+    .timeline-card-title h3 {
+        font-size: 21px;
+    }
+    .timeline-card ul,
+    .timeline-card ul li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-section-title {
+        font-size: 42px;
+        line-height: 1.15;
+        white-space: normal;
+    }
+
+    .hero-section-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .timeline-card-title h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .timeline-card ul,
+    .timeline-card ul li {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section-title {
+        font-size: 42px;
+        line-height: 1.15;
+        white-space: normal;
+    }
+
+    .hero-section-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .timeline-card-title h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .timeline-card ul,
+    .timeline-card ul li {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section-title {
+        font-size: 34px;
+        line-height: 1.1;
+    }
+
+    .hero-section-description {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .timeline-card-title h3 {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .timeline-card ul,
+    .timeline-card ul li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

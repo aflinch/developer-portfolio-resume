@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../data/img/logo.png";
+import logo from "../data/img/logo.webp";
 
 function Navbar() {
     const [navActive, setNavActive] = useState(false);

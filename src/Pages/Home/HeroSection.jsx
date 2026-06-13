@@ -3,7 +3,7 @@ import React, {useCallback, useEffect, useState} from "react";
 import { SiGithub, SiInstagram, SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa6";
 import {TypewriterTitle} from "../../Function/TypeWriter";
-import heroSectionImg from "../../data/img/hero-section-img.png";
+import heroSectionImg from "../../data/img/hero-section-img.webp";
 import resumePdf from "../../data/Flinchum, Alex - Resume.pdf";
 
 const titles = ["Full-Stack Developer", "Gameplay Designer", "Software-Test Engineer"];

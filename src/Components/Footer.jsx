@@ -2,7 +2,7 @@ import React from 'react';
 import { Phone, Mail } from 'lucide-react';
 import { FaLinkedin } from "react-icons/fa6";
 import {SiInstagram, SiX} from "react-icons/si";
-import logo from "../data/img/logo.png";
+import logo from "../data/img/logo.webp";
 
 function Footer() {
 

@@ -22,11 +22,11 @@
       "start": "July 2019",
       "end": "August 2020",
       "category": "work",
-      "description": "Owned end-to-end frontend development and UI maintenance for InDepth Lite, a business-critical file-processing application utilized daily by 150+ data analysts across GM’s global analytics platform.\nSpearheaded a comprehensive 3-month framework migration that successfully modernized 100% of legacy AngularJS components to enterprise Angular, drastically improving application performance and long-term maintainability.\nSystematically diagnosed and resolved deep-rooted dependency bottlenecks and 15+ complex UI bugs, resulting in a snappier user experience and maintaining zero production downtime during deployment phases."
+      "description": "Headed the maintenance of InDepth Lite, an Angular-based file-processing application supporting 150 users across GM’s analytics platform, collaborating with frontend, backend, and analytics teams to sustain 99%+ reliability.\nSupervised the modernization of 100% of legacy Angular components during a 3-month framework migration, resolving deprecated dependencies and regressions with zero disruption to active production workflows.\nGuided the identification and resolution of 15+ frontend UI defects, reducing user-reported support tickets by 30% and improving application stability across active development cycles."
     },
     {
       "id": "3",
-      "title": "Software Engineer I, Test Automation",
+      "title": "Software Development Engineer in Test",
       "org": "GENERAL MOTORS",
       "location": "Austin, TX",
       "tags": ["Java", "C#", "PostgreSQL", "Git", "Jira"],
@@ -34,7 +34,7 @@
       "start": "August 2020",
       "end": "February 2024",
       "category": "work",
-      "description": "Designed, developed, and deployed robust, scalable test automation frameworks built completely from the ground up utilizing Java and C#.\nTargeted cross-platform backend data pipelines and PostgreSQL instances, successfully scaling automated test regression coverage from a legacy baseline of 30% to a comprehensive 85% across all enterprise backend integrations.\nNeutralized recurring deployment risks and delivery bottlenecks, reducing manual QA testing overhead by 60% and shortening delivery cycles by 2 full days per development sprint."
+      "description": "Led the development and architecture of reusable Java and C# test automation frameworks from scratch, reducing manual regression testing by 60% and cutting defect escape rates by 25% across 8+ bi-weekly release cycles annually.\nDirected end-to-end release readiness coordination across a 5+ cross-functional team, resolving 15+ production and integration defects per sprint and maintaining enterprise application stability.\nDrove the expansion of automated test coverage from 30% to 85% across enterprise backend integrations and application workflows, accelerating QA cycle time by 2 days per sprint and enabling more reliable bi-weekly deployments."
     },
     {
       "id": "4",
@@ -50,7 +50,7 @@
     },
     {
       "id": "5",
-      "title": "Software Engineer II",
+      "title": "Software Engineer",
       "org": "GENERAL MOTORS",
       "location": "Austin, TX",
       "tags": ["SpringBoot", "PostgreSQL", ".NET", "React", "GraphQL", "C#", "Java", "Git", "Jira"],
@@ -58,7 +58,7 @@
       "start": "February 2024",
       "end": "May 2026",
       "category": "work",
-      "description": "Architected and implemented enterprise-level automated testing frameworks within GM’s high-throughput DaaS (Data as a Service) ecosystem, driving Java and SpringBoot regression coverage to a resilient 90%.\nEngineered secure, high-availability backend microservices and IMOS API integrations that directly support and drive daily operations for 500+ manufacturing plant power users.\nDesigned performance-optimized, reusable GraphQL query and mutation schemas to streamline frontend data fetching, while ensuring system stability and zero-downtime cluster configurations throughout a large-scale cloud migration to Red Hat OpenShift."
+      "description": "Managed automated testing integration within GM’s DaaS Java/Spring Boot platform, increasing automated regression coverage from 35% to 90% and reducing manual QA validation effort by 40% across release cycles.\nBuilt and maintained backend services and IMOS API integrations in Java, .NET, React, and GraphQL, leveraging Copilot to support 500+ plant users across 100+ facilities managing equipment metadata and node relationships.\nSpearheaded the adoption of reusable GraphQL query and service integration patterns adopted across 3+ manufacturing business units, improving backend data retrieval consistency and accelerating API onboarding for new teams by 25%.\nExecuted post-deployment validation scripts for 10+ services during a RedHat OpenShift migration, directly contributing to maintaining 99%+ production uptime and stability."
     }
   ]
 }

@@ -2,6 +2,7 @@ import {NavLink} from "react-router-dom";
 import React, {useCallback, useEffect, useState} from "react";
 import { SiGithub, SiInstagram, SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa6";
+import { ArrowRight, Download } from "lucide-react";
 import {TypewriterTitle} from "../../Function/TypeWriter";
 import heroSectionImg from "../../data/img/hero-section-img.webp";
 import resumePdf from "../../data/Flinchum, Alex - Resume.pdf";
@@ -51,9 +52,9 @@ export default function HeroSection() {
                         onClick={closeMenu}
                         to="/Contact"
                         className="btn btn-primary">
-                        Contact Me
+                        <span>Contact Me</span> <ArrowRight />
                     </NavLink>
-                    <a href={resumePdf} download="Flinchum, Alex - Resume.pdf" className="btn btn-primary">Download CV</a>
+                    <a href={resumePdf} download="Flinchum, Alex - Resume.pdf" className="btn btn-primary"><Download /> <span>Download CV</span></a>
                 </span>
                 <span className="hero-section-links">
                     <a href="https://www.linkedin.com/in/alexflinchum/" className="link" target="_blank" rel="noopener noreferrer">
